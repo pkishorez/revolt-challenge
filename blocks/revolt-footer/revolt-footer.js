@@ -10,6 +10,7 @@ export default async function decorate(block) {
   const links = Array.from(block.querySelectorAll("a"));
   links.forEach((link) => {
     link.setAttribute("target", "_blank");
+    link.classList.remove("button");
   });
 
   Array.from(block.children).forEach((row) => {
