@@ -1,0 +1,50 @@
+.section.revolt-footer-container {
+  padding: 16px;
+  padding-bottom: 48px;
+
+  margin-top: 16px;
+
+  font-size: 14px;
+  font-weight: 400;
+
+  background-color: var(--revolt-footer-background);
+  color: var(--revolt-footer-foreground);
+}
+
+.block.revolt-footer {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  row-gap: 24px;
+  column-gap: 16px;
+}
+
+.link-section .section-title {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.link-section .section-content > p {
+  margin: 0;
+  margin-top: 4px;
+}
+
+.comm-section {
+  display: flex;
+  flex-direction: column;
+}
+.comm-section .section-title {
+  text-transform: uppercase;
+}
+.comm-section .section-title picture img {
+  max-width: 100%;
+  height: auto;
+}
+
+.comm-section .section-content > ul {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  justify-content: flex-start;
+}
