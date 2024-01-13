@@ -6,6 +6,12 @@ import { loadFragment } from "../fragment/fragment.js";
  * @param {Element} block The footer block element
  */
 export default async function decorate(block) {
+  // Target all links in block to open in new tab
+  const links = Array.from(block.querySelectorAll("a"));
+  links.forEach((link) => {
+    link.setAttribute("target", "_blank");
+  });
+
   Array.from(block.children).forEach((row) => {
     const [title, content] = row.children;
 
